@@ -1,8 +1,8 @@
 /* eslint-disable import/prefer-default-export */
 import { post } from 'axios';
 
-const clientId = CLIENTID;
-const clientSecret = CLIENTSECRET;
+const clientId = process.env.CLIENT_ID;
+const clientSecret = process.env.SECRET_ID;
 
 const region = 'eu';
 const API_URL = `https://${region}.battle.net/oauth/token`;
