@@ -1,35 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@LuismGil 
-LuismGil
-/
-Calculator
-1
-0
-0
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-Calculator/.gitignore
-@LuismGil
-LuismGil init project
-Latest commit beb9134 on Feb 8
- History
- 1 contributor
-73 lines (53 sloc)  879 Bytes
- 
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
