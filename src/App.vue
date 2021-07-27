@@ -11,25 +11,25 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState } from 'vuex';
 
-import LoadLayout from './layouts/LoadLayout'
-import MainLayout from './layouts/MainLayout'
-import BaseLoading from '@/components/BaseLoading.vue'
+import BaseLoading from '@/components/BaseLoading.vue';
+import LoadLayout from './layouts/LoadLayout.vue';
+import MainLayout from './layouts/MainLayout.vue';
 
 export default {
   name: 'App',
   components: {
     MainLayout,
     LoadLayout,
-    BaseLoading
+    BaseLoading,
   },
   computed: {
     ...mapState('loading', {
-      isLoading: 'isLoading'
-    })
-  }
-}
+      isLoading: 'isLoading',
+    }),
+  },
+};
 </script>
 
 <style>
