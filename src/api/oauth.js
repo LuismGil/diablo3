@@ -1,6 +1,8 @@
 /* eslint-disable import/prefer-default-export */
 import { post } from 'axios';
 
+require('dotenv').config();
+
 const clientId = process.env.CLIENT_ID;
 const clientSecret = process.env.SECRET_ID;
 
