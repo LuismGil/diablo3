@@ -1,13 +1,19 @@
 <template>
-  <div class="home">
-    <h1>Home Page</h1>
+  <div class="home-view">
+
+    <HomeTitle/>
+
+    <MainForm/>
+
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+import MainForm from './HomeForm.vue';
+import HomeTitle from './HomeTitle.vue';
 
 export default {
-  name: 'Home',
+  name: 'HomeView',
+  components: { HomeTitle, MainForm },
 };
 </script>
