@@ -1,40 +1,16 @@
 import Vue from 'vue';
-import { BootstrapVue } from 'bootstrap-vue';
+// BootstrapVue
+import './plugins/BootstrapVue';
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import {
-  faSkull, faCrown, faDungeon, faHatWizard, faHammer, faGem,
-} from '@fortawesome/free-solid-svg-icons';
-import {
-  faVuejs, faBootstrap, faFontAwesome, faGithub, faBattleNet,
-} from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import store from './store';
-import router from './router';
+// Vue Font-Awesome
+import './plugins/fontAwesome';
+
 import App from './App.vue';
+import router from './router';
+import store from './store';
 
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-vue/dist/bootstrap-vue.css';
+// CSS global
 import './assets/css/main.css';
-
-library.add(
-  faSkull,
-  faCrown,
-  faDungeon,
-  faHatWizard,
-  faHammer,
-  faGem,
-  faVuejs,
-  faBootstrap,
-  faFontAwesome,
-  faGithub,
-  faBattleNet,
-);
-
-Vue.component('font-awesome-icon', FontAwesomeIcon);
-
-// Make BootstrapVue available throughout your project
-Vue.use(BootstrapVue);
 
 Vue.config.productionTip = false;
 
@@ -42,10 +18,12 @@ new Vue({
   router,
   store,
   methods: {
+    // Nuestra función
     init() {
-      store.dispatch('oauth/getToken', null, { root: true });
+      store.dispatch('oauth/getToken');
     },
   },
+  // Hook created
   created() {
     this.init();
   },
