@@ -1,7 +1,9 @@
 <template>
   <div>
     <BaseLoading v-if="isLoading"/>
-    <h1>Profile View</h1>
+    <template v-if="profileData !== null">
+      <MainBlock :profile-data="profileData"/>
+    </template>
   </div>
 </template>
 
@@ -9,10 +11,11 @@
 import BaseLoading from '@/components/BaseLoading.vue';
 import setError from '@/mixins/setError';
 import { getApiAccount } from '@/api/search';
+import MainBlock from '@/views/MainBlock/Index.vue';
 
 export default {
   name: 'ProfileView',
-  components: { BaseLoading },
+  components: { BaseLoading, MainBlock },
   mixins: [
     setError,
   ],
