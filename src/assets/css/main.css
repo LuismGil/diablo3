@@ -141,3 +141,52 @@
   }
 
 }
+
+  /* 
+  * Acts
+  **/
+
+.act {
+  background-image: url('../img/progress.png');
+  background-size: 500%;
+}
+
+.act1, .pending {
+  background-position: -1px 0;
+}
+
+.act1, .done {
+  background-position: -1px 57px;
+}
+
+.act2, .pending {
+  background-position: -51px 0;
+}
+
+.act2, .done {
+  background-position: -51px -56px;
+}
+
+.act3, .pending {
+  background-position: -101px 0px;
+}
+
+.act3, .done {
+  background-position: -101px -168px;
+}
+
+.act4, .pending {
+  background-position: -151px 0px;
+}
+
+.act4, .done {
+  background-position: -151px -168px;
+}
+
+.act5, .pending {
+  background-position: 50px 0;
+}
+
+.act5, .done {
+  background-position: 50px 57px;
+}
