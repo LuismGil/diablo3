@@ -41,12 +41,13 @@ export default {
 </script>
 
 <style>
-  .progression-bosses, .boss-img {
-    display: block;
-  }
-  .act {
-    margin: 0 auto;
-    width: 50px;
-    height: 55px;
-  }
+.progression-bosses, .boss-img {
+  display: block;
+}
+
+.act {
+  margin: 0 auto;
+  width: 50px;
+  height: 55px;
+}
 </style>
